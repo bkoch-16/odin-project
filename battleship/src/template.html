@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="labels">
+        <span>Player 1 (Human)</span>
+        <span>Player 2 (Computer)</span>
+        <span>Click on player 2 board to fire</span>
+      </div>
+      <div class="subheader">
+        <div class="letterLabel">
+          <span class="label">A</span>
+          <span class="label">B</span>
+          <span class="label">C</span>
+          <span class="label">D</span>
+          <span class="label">E</span>
+          <span class="label">F</span>
+          <span class="label">G</span>
+          <span class="label">H</span>
+          <span class="label">I</span>
+          <span class="label">J</span>
+        </div>
+        <div class="letterLabel">
+          <span class="label">A</span>
+          <span class="label">B</span>
+          <span class="label">C</span>
+          <span class="label">D</span>
+          <span class="label">E</span>
+          <span class="label">F</span>
+          <span class="label">G</span>
+          <span class="label">H</span>
+          <span class="label">I</span>
+          <span class="label">J</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="numberLabel">
+        <span class="label">1</span>
+        <span class="label">2</span>
+        <span class="label">3</span>
+        <span class="label">4</span>
+        <span class="label">5</span>
+        <span class="label">6</span>
+        <span class="label">7</span>
+        <span class="label">8</span>
+        <span class="label">9</span>
+        <span class="label">10</span>
+      </div>
+      <div class="board" id="playerOne">
+        <div class="column">
+          <div class="tile" id="A1"></div>
+          <div class="tile" id="A2"></div>
+          <div class="tile" id="A3"></div>
+          <div class="tile" id="A4"></div>
+          <div class="tile" id="A5"></div>
+          <div class="tile" id="A6"></div>
+          <div class="tile" id="A7"></div>
+          <div class="tile" id="A8"></div>
+          <div class="tile" id="A9"></div>
+          <div class="tile" id="A10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="B1"></div>
+          <div class="tile" id="B2"></div>
+          <div class="tile" id="B3"></div>
+          <div class="tile" id="B4"></div>
+          <div class="tile" id="B5"></div>
+          <div class="tile" id="B6"></div>
+          <div class="tile" id="B7"></div>
+          <div class="tile" id="B8"></div>
+          <div class="tile" id="B9"></div>
+          <div class="tile" id="B10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="C1"></div>
+          <div class="tile" id="C2"></div>
+          <div class="tile" id="C3"></div>
+          <div class="tile" id="C4"></div>
+          <div class="tile" id="C5"></div>
+          <div class="tile" id="C6"></div>
+          <div class="tile" id="C7"></div>
+          <div class="tile" id="C8"></div>
+          <div class="tile" id="C9"></div>
+          <div class="tile" id="C10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="D1"></div>
+          <div class="tile" id="D2"></div>
+          <div class="tile" id="D3"></div>
+          <div class="tile" id="D4"></div>
+          <div class="tile" id="D5"></div>
+          <div class="tile" id="D6"></div>
+          <div class="tile" id="D7"></div>
+          <div class="tile" id="D8"></div>
+          <div class="tile" id="D9"></div>
+          <div class="tile" id="D10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="E1"></div>
+          <div class="tile" id="E2"></div>
+          <div class="tile" id="E3"></div>
+          <div class="tile" id="E4"></div>
+          <div class="tile" id="E5"></div>
+          <div class="tile" id="E6"></div>
+          <div class="tile" id="E7"></div>
+          <div class="tile" id="E8"></div>
+          <div class="tile" id="E9"></div>
+          <div class="tile" id="E10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="F1"></div>
+          <div class="tile" id="F2"></div>
+          <div class="tile" id="F3"></div>
+          <div class="tile" id="F4"></div>
+          <div class="tile" id="F5"></div>
+          <div class="tile" id="F6"></div>
+          <div class="tile" id="F7"></div>
+          <div class="tile" id="F8"></div>
+          <div class="tile" id="F9"></div>
+          <div class="tile" id="F10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="G1"></div>
+          <div class="tile" id="G2"></div>
+          <div class="tile" id="G3"></div>
+          <div class="tile" id="G4"></div>
+          <div class="tile" id="G5"></div>
+          <div class="tile" id="G6"></div>
+          <div class="tile" id="G7"></div>
+          <div class="tile" id="G8"></div>
+          <div class="tile" id="G9"></div>
+          <div class="tile" id="G10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="H1"></div>
+          <div class="tile" id="H2"></div>
+          <div class="tile" id="H3"></div>
+          <div class="tile" id="H4"></div>
+          <div class="tile" id="H5"></div>
+          <div class="tile" id="H6"></div>
+          <div class="tile" id="H7"></div>
+          <div class="tile" id="H8"></div>
+          <div class="tile" id="H9"></div>
+          <div class="tile" id="H10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="I1"></div>
+          <div class="tile" id="I2"></div>
+          <div class="tile" id="I3"></div>
+          <div class="tile" id="I4"></div>
+          <div class="tile" id="I5"></div>
+          <div class="tile" id="I6"></div>
+          <div class="tile" id="I7"></div>
+          <div class="tile" id="I8"></div>
+          <div class="tile" id="I9"></div>
+          <div class="tile" id="I10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="J1"></div>
+          <div class="tile" id="J2"></div>
+          <div class="tile" id="J3"></div>
+          <div class="tile" id="J4"></div>
+          <div class="tile" id="J5"></div>
+          <div class="tile" id="J6"></div>
+          <div class="tile" id="J7"></div>
+          <div class="tile" id="J8"></div>
+          <div class="tile" id="J9"></div>
+          <div class="tile" id="J10"></div>
+        </div>
+      </div>
+      <div class="numberLabel">
+        <div class="label">1</div>
+        <div class="label">2</div>
+        <div class="label">3</div>
+        <div class="label">4</div>
+        <div class="label">5</div>
+        <div class="label">6</div>
+        <div class="label">7</div>
+        <div class="label">8</div>
+        <div class="label">9</div>
+        <div class="label">10</div>
+      </div>
+      <div class="board" id="playerTwo">
+        <div class="column">
+          <div class="tile" id="A1"></div>
+          <div class="tile" id="A2"></div>
+          <div class="tile" id="A3"></div>
+          <div class="tile" id="A4"></div>
+          <div class="tile" id="A5"></div>
+          <div class="tile" id="A6"></div>
+          <div class="tile" id="A7"></div>
+          <div class="tile" id="A8"></div>
+          <div class="tile" id="A9"></div>
+          <div class="tile" id="A10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="B1"></div>
+          <div class="tile" id="B2"></div>
+          <div class="tile" id="B3"></div>
+          <div class="tile" id="B4"></div>
+          <div class="tile" id="B5"></div>
+          <div class="tile" id="B6"></div>
+          <div class="tile" id="B7"></div>
+          <div class="tile" id="B8"></div>
+          <div class="tile" id="B9"></div>
+          <div class="tile" id="B10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="C1"></div>
+          <div class="tile" id="C2"></div>
+          <div class="tile" id="C3"></div>
+          <div class="tile" id="C4"></div>
+          <div class="tile" id="C5"></div>
+          <div class="tile" id="C6"></div>
+          <div class="tile" id="C7"></div>
+          <div class="tile" id="C8"></div>
+          <div class="tile" id="C9"></div>
+          <div class="tile" id="C10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="D1"></div>
+          <div class="tile" id="D2"></div>
+          <div class="tile" id="D3"></div>
+          <div class="tile" id="D4"></div>
+          <div class="tile" id="D5"></div>
+          <div class="tile" id="D6"></div>
+          <div class="tile" id="D7"></div>
+          <div class="tile" id="D8"></div>
+          <div class="tile" id="D9"></div>
+          <div class="tile" id="D10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="E1"></div>
+          <div class="tile" id="E2"></div>
+          <div class="tile" id="E3"></div>
+          <div class="tile" id="E4"></div>
+          <div class="tile" id="E5"></div>
+          <div class="tile" id="E6"></div>
+          <div class="tile" id="E7"></div>
+          <div class="tile" id="E8"></div>
+          <div class="tile" id="E9"></div>
+          <div class="tile" id="E10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="F1"></div>
+          <div class="tile" id="F2"></div>
+          <div class="tile" id="F3"></div>
+          <div class="tile" id="F4"></div>
+          <div class="tile" id="F5"></div>
+          <div class="tile" id="F6"></div>
+          <div class="tile" id="F7"></div>
+          <div class="tile" id="F8"></div>
+          <div class="tile" id="F9"></div>
+          <div class="tile" id="F10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="G1"></div>
+          <div class="tile" id="G2"></div>
+          <div class="tile" id="G3"></div>
+          <div class="tile" id="G4"></div>
+          <div class="tile" id="G5"></div>
+          <div class="tile" id="G6"></div>
+          <div class="tile" id="G7"></div>
+          <div class="tile" id="G8"></div>
+          <div class="tile" id="G9"></div>
+          <div class="tile" id="G10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="H1"></div>
+          <div class="tile" id="H2"></div>
+          <div class="tile" id="H3"></div>
+          <div class="tile" id="H4"></div>
+          <div class="tile" id="H5"></div>
+          <div class="tile" id="H6"></div>
+          <div class="tile" id="H7"></div>
+          <div class="tile" id="H8"></div>
+          <div class="tile" id="H9"></div>
+          <div class="tile" id="H10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="I1"></div>
+          <div class="tile" id="I2"></div>
+          <div class="tile" id="I3"></div>
+          <div class="tile" id="I4"></div>
+          <div class="tile" id="I5"></div>
+          <div class="tile" id="I6"></div>
+          <div class="tile" id="I7"></div>
+          <div class="tile" id="I8"></div>
+          <div class="tile" id="I9"></div>
+          <div class="tile" id="I10"></div>
+        </div>
+        <div class="column">
+          <div class="tile" id="J1"></div>
+          <div class="tile" id="J2"></div>
+          <div class="tile" id="J3"></div>
+          <div class="tile" id="J4"></div>
+          <div class="tile" id="J5"></div>
+          <div class="tile" id="J6"></div>
+          <div class="tile" id="J7"></div>
+          <div class="tile" id="J8"></div>
+          <div class="tile" id="J9"></div>
+          <div class="tile" id="J10"></div>
+        </div>
+      </div>
+    </div>
+    <form action="./" class="newShipForm">
+      <fieldset>
+        <legend>Ship Input</legend>
+        <p class="entry-set">
+          <label for="ship-start">Ship Start Coordinate</label>
+          <input type="text" name="ship-start" id="ship-start" />
+        </p>
+        <p class="entry-set">
+          <label for="ship-end">Ship End Coordinate</label>
+          <input type="text" name="ship-end" id="ship-end" />
+        </p>
+        <button type="submit" id="start">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
