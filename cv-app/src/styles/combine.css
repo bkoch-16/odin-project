@@ -1,0 +1,40 @@
+input {
+  margin-left: 3px;
+}
+
+button {
+  border: black 1px solid;
+  margin-top: 5px;
+}
+
+h6 {
+  margin: 0px;
+  font-size: 16px;
+  display: inline;
+}
+
+h5 {
+  margin: 0px;
+  font-size: 20px;
+}
+
+h4 {
+  margin: 0px;
+  font-size: 24px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h2 {
+  margin: 14px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  text-align: left;
+}
